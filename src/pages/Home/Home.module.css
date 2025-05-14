@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.homeContent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url('../../assets/Imagem_de_fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 70%;
+    background-attachment: fixed; 
+}
+
+.homeContentElements{
+    background-color: var(--corPrincipal);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 100px;
+    width: 40vw;
+}
+
+.homeContentText{
+    font-weight: bold;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+}
+
+.homeContentTextTitle{
+   font-size: 64px;
+   font-weight: bold;
+   color: var(--corSecundaria);
+   margin-bottom: 20px;
+}
+
+.homeContentTextSubTitle{
+    font-size: 24px;
+}
+
+.homeContentButtons{
+    display: flex;
+    gap: 16px;
+}
+
+.loginButton{
+    background-color: #FF9385;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px;
+    width: 170px;
+    height: 80px;
+    padding: 12px 24px;
+    color: var(--corQuaternaria);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.loginButton:hover, .registerButton:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.registerButton{
+    background-color: #FF9385;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px;
+    width: 170px;
+    height: 80px;
+    padding: 12px 24px;
+    color: var(--corQuaternaria);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in;
+}

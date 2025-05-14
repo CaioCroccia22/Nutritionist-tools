@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --corPrincipal: #97CF8D;
+    --corSecundaria: #4C6947;
+    --corTerciaria: #7EAD77;
+    --corQuaternaria: #F7F7F7;
+}

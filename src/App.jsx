@@ -1,15 +1,30 @@
-import { useState } from 'react'
-import Home from './pages/Home'
+import * as React from 'react';
+import { BrowserRouter, useRoutes } from 'react-router';
+import Home from './pages/Home/Home';
+import DashBoard from './pages/Dashboard/Dashboard';
+import './App.module.css'
 
 
-import './App.css'
 
-function App() {
+function AppRoutes() {
+  let routes = useRoutes([
+    {
+      path: '/',
+      element: <Home />
+    },
+    {
+      path: '/Dashboard',
+      element: <DashBoard />
+    },
+  ]);
+  return routes;
+}
 
-  return (
-    <>
-      <Home></Home>
-    </>
+function App(){
+  return(
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
 
